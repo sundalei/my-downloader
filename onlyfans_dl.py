@@ -28,7 +28,7 @@ urllib3.disable_warnings()
 # Configuration
 
 # Session variables
-user_id = ""
+USER_ID = ""
 user_agent = ""
 x_bc = ""
 session_cookie = ""
@@ -44,6 +44,12 @@ download_dir = ""
 # List of accounts to skip
 skip_accounts = []
 
+# Separate photos into subdirectories by post/album
+# Single photo posts are not put into subdirectories
+SEPARATE_ALBUMS = True
+
 print(urllib3)
 print(os)
 print(sys)
+print(json)
+print(shutil)
