@@ -29,7 +29,7 @@ urllib3.disable_warnings()
 
 # Session variables
 USER_ID = ""
-user_agent = ""
+USER_AGENT = ""
 x_bc = ""
 session_cookie = ""
 
@@ -48,8 +48,13 @@ skip_accounts = []
 # Single photo posts are not put into subdirectories
 SEPARATE_ALBUMS = True
 
+# Use content type subfolders
+USE_SUB_FOLDERS = True
+
 print(urllib3)
 print(os)
 print(sys)
 print(json)
 print(shutil)
+print(pathlib)
+print(requests)
