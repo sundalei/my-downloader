@@ -18,10 +18,10 @@ import sys
 import json
 import shutil
 import pathlib
-import requests
-import urllib3
 import hashlib
 from datetime import datetime, timedelta
+import requests
+import urllib3
 
 urllib3.disable_warnings()
 
@@ -38,11 +38,11 @@ SESSION_COOKIE = ""
 # 2 = always print file names
 # 3 = print api calls
 # 4 = print skipped files that already exist
-verbosity = 2
+VERBOSITY = 2
 # Download Directory. Use CMD if null
-download_dir = ""
+DOWNLOAD_DIR = ""
 # List of accounts to skip
-skip_accounts = []
+SKIP_ACCOUNTS = []
 
 # Separate photos into subdirectories by post/album
 # Single photo posts are not put into subdirectories
@@ -63,6 +63,9 @@ PURCHASED = True
 
 # End configurations
 
+API_BASE_URL = "https://onlyfans.com/api2/v2"
+print("API_BASE_URL:", API_BASE_URL)
+
 print(urllib3)
 print(os)
 print(sys)
@@ -71,3 +74,5 @@ print(shutil)
 print(pathlib)
 print(requests)
 print(hashlib)
+print(datetime)
+print(timedelta)
