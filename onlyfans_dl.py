@@ -30,8 +30,8 @@ urllib3.disable_warnings()
 # Session variables
 USER_ID = ""
 USER_AGENT = ""
-x_bc = ""
-session_cookie = ""
+X_BC = ""
+SESSION_COOKIE = ""
 
 # 0 = do not print file names or api calls
 # 1 = print file names only when max_age is set
@@ -51,6 +51,18 @@ SEPARATE_ALBUMS = True
 # Use content type subfolders
 USE_SUB_FOLDERS = True
 
+# Content types to download
+VIDEOS = True
+PHOTOS = True
+AUDIO = True
+POSTS = True
+STORIES = True
+MESSAGES = True
+ARCHIVED = True
+PURCHASED = True
+
+# End configurations
+
 print(urllib3)
 print(os)
 print(sys)
@@ -58,3 +70,4 @@ print(json)
 print(shutil)
 print(pathlib)
 print(requests)
+print(hashlib)
